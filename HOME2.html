@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pulsa & Paket Data</title>
+     
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+   </head>
+<body>
+<!-- BANNER SLIDE --> <div style="width:100%;margin:0px auto;margin-top:0px;margin-bottom:0px">
+ <a ><img class="banner-slide" src="https://i.ibb.co/BZGLjNx/banner-2.png" style="width:100%" alt="Banner Slide "></a>
+     <a ><img class="banner-slide" src="https://i.ibb.co/MSPvs3j/banner-1.png" style="width:100%" alt="Banner Slide 1"></a>
+  <a ><img class="banner-slide" src="https://i.ibb.co/kD6Wqs6/B3.png" style="width:100%" alt="Banner Slide 2"></a>
+  <a ><img class="banner-slide" src="https://i.ibb.co/9tVQxfv/B4.png" style="width:100%" alt="Banner Slide 3"></a>
+  <a ><img class="banner-slide" src="https://i.ibb.co/wdbpBtP/b5.png" style="width:100%" alt="Banner Slide 4"></a>
+  <style>
+  .gulir{
+  width:100%;
+  display: flex;
+  overflow: auto;
+  }.gamba{
+  width: 40%;
+  margin-right: 2%;
+  border-radius: 7px;
+  }
+  </style>
+  </div><script>var myIndex = 0;carousel();function carousel() {var i; var x =document.getElementsByClassName("banner-slide"); for (i = 0; i < x.length; i++) { x[i].style.display = "none";}myIndex++;if (myIndex > x.length) {myIndex = 1} x[myIndex-1].style.display = "block";setTimeout(carousel, 1000); }</script><!-- END --> </div>     <div class="container"></center>
+        
+                </div>
+                <div  class="panel-body">
+                    
+                    <div class="form-group">
+                        <label style="color:#c62626">PILIH OPRATOR</label>
+                        <select name="jenis" class="form-control danger"  name="provinsi" onChange="tampil(this.value)">
+                            <option value="game">-- PILIH SALAH SATU OPRATOR --</option>
+                            <option value="indosat">INDOSAT OREDOO</option>
+                            <option value="telkomsel">TELKOMSEL</option>
+                            <option value="xl">XL</option>
+                            <option value="axis">AXIS</option>
+                            <option value="smartfreen">SMARTFREEN</option>
+                            <option value="tre">TREE</option>
+                            
+                        </select>
+                    </div>
+                    <div id="kota">
+                    <label style="color:#c62626">TERLARIS HARI INI</label><br>
+                    <div class="bg">
+                    <img style="width:40%;border-radius:5px;margin-right: 2%"  src="https://i.ibb.co/JmL9VR9/download.png"></a>
+                    <img style="width:40%;border-radius:5px;margin-right: 2%"  src="https://i.ibb.co/sytx3ZV/Logo-Telkomsel-1.png" alt="ff-1" border="0"></a>
+                    <img style="width:40%;border-radius:5px;margin-right: 2%"  src="https://i.ibb.co/Vvpb7p5/Indosat-Ooredoo-Logo.jpg"  alt="ff-1" border="0"></a>
+                    </div><br>
+                   
+                    <button  class="btn " style="background-color:#c62626;color:white"  >CARA TOP UP</button>
+                    
+                    
+                   <table class="table" >
+              
+  <thead>
+    <tr>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>PILIH SALAH SATU OPRATOR YANG MAU KAMU BELI PROUDKNYA</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>SETELAH MEMILIH OPRATOR PILIH PRODUK OPRATOR YANG MAU KAMU BELI</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+    <td>MASUKAN NOMOR TELPON (<strong>MENGGUNAKAN 08</strong>)</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">4</th>
+    <td>JIKA SUDAH DIRASA BENAR, KLIK BELI DAN PASTIKAN BAYAR MENGGUNAKAN SALDO NIAGA PAY UNTUK PELAYANAN YANG LEBIH CEPAT</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+    <td>JIKA KAMU MEMBAYAR SELAIN DARI SALDO NIAGA PAY PEMBELIAN AKAN DI PROSES SETELAH ADMIN ONLINE</td>
+    </tr>
+  </tbody>
+</table>
+                
+                   
+                    <script type="text/javascript">
+                   
+        function tampil(provinsi)
+        {
+            var kota="";
+            switch(provinsi)
+            {
+                case "indosat" : {
+                    kota = '<div class="btn-group1" style="width:100%;margin-top:-3%"><button id="on"onclick=" document.getElementById(\'on\').style=\'background-color:white ;color:black;border-bottom:none;border-radius:3px;width:50%\';document.getElementById(\'off\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'block\';document.getElementById(\'data\').style.display=\'none\'"  style="width:50%";border-radius:3px;>PULSA</button><button id="off" onclick=" document.getElementById(\'off\').style=\'background-color:white;color:black;border-bottom:none;border-radius:3px; ;width:50%;border-radius:3px\';document.getElementById(\'on\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'none\';document.getElementById(\'data\').style.display=\'block\'"style="width:50%;border-radius:3px;  ">PAKET DATA</button></div> </div><br><div id="pulsaa"class="container" style="border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none"><a href="https://promang1.bukaolshop.site/produk/pulsa-5-000-650511"><center><button style="margin-top:10%; width: 45%"class="harga"> 5.000,-<br>Rp.6.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-10-000-650512"><button style="margin-top:10%;width: 45%"class="harga"> 10.000,-<br>Rp.11.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-15-000-651307"><button style="margin-top:5%;width: 45%"class="harga"> 15.000,-<br>Rp.15.950,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-20-000-650513"><button style="margin-top:5%;width: 45%"class="harga"> 20.000,-<br>Rp.20.950,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-25-000-650515"><button style="margin-top:5%;width: 45%"class="harga"> 25.000,-<br>Rp.25.830,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-30-000-651310"><button style="margin-top:5%;width: 45%"class="harga"> 30.000,-<br>Rp.30.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-40-000-651311"><button style="margin-top:5%;width: 45%"class="harga"> 40.000,-<br>Rp.40.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-50-000-650516"><button style="margin-top:5%;width: 45%"class="harga"> 50.000,-<br>Rp.50.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-100-000-650517"><button style="margin-top:5%;width: 45%"class="harga"> 100.000,-<br>Rp.100.000,-</button></a></div> </div><div id="data"class="container" style="display:none;border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none; float: left"><a href="https://promang1.bukaolshop.site/produk/data-1gb-30-hari-650533"><button style="margin-top:10%;width: 45%"class="harga"> 1 GB 30 HARI<br>Rp.11.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-2gb-30-hari-650535"><button style="margin-top:10%;width: 45%"class="harga"> 2 GB 30 HARI<br>Rp.19.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-3gb-30-hari-650537"><button style="margin-top:5%;width: 45%"class="harga"> 3 GB 30 HARI<br>Rp.28.00,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-4gb-30-hari-650540"><button style="margin-top:5%;width: 45%"class="harga"> 4 GB 30 HARI<br>Rp.40.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-10gb-30-hari-650542"><button style="margin-top:5%;width: 45%"class="harga"> 10 GB 30 HARI<br>Rp.80.000,-</button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 1 GB 7 HARI<br>Rp.10.000,-</button></a></button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 2 GB 7 HARI<br>Rp.20.000,-</button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 3 GB 7 HARI<br>Rp.30.000,-</button></a></button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 4 GB 7 HARI<br>Rp.40.000,-</button></a><a href""><button style="margin-top:5%;width: 45%;;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 5 GB 7 HARI<br>Rp.50.000,-</button></a></button></a></div>'
+                }
+                break;
+                case "telkomsel" : {
+                    kota = '<div class="btn-group1" style="width:100%;margin-top:-3%"><button id="on"onclick=" document.getElementById(\'on\').style=\'background-color:white ;color:black;border-bottom:none;border-radius:3px;width:50%\';document.getElementById(\'off\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'block\';document.getElementById(\'data\').style.display=\'none\'"  style="width:50%";border-radius:3px;>PULSA</button><button id="off" onclick=" document.getElementById(\'off\').style=\'background-color:white;color:black;border-bottom:none;border-radius:3px; ;width:50%;border-radius:3px\';document.getElementById(\'on\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'none\';document.getElementById(\'data\').style.display=\'block\'"style="width:50%;border-radius:3px;  ">PAKET DATA</button></div> </div><br><div id="pulsaa"class="container" style="border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none"><a href="https://promang1.bukaolshop.site/produk/pulsa-5-000-650351"><center><button style="margin-top:10%; width: 45%"class="harga"> 5.000,-<br>Rp.5.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-10-000-650469"><button style="margin-top:10%;width: 45%"class="harga"> 10.000,-<br>Rp.11.200,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-15-000-650751"><button style="margin-top:5%;width: 45%"class="harga"> 15.000,-<br>Rp.15.600,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-20-000-650471"><button style="margin-top:5%;width: 45%"class="harga"> 20.000,-<br>Rp.20.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-25000-650752"><button style="margin-top:5%;width: 45%"class="harga"> 25.000,-<br>Rp.25.750,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-30000-650758"><button style="margin-top:5%;width: 45%"class="harga"> 30.000,-<br>Rp.30.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-35000-650761"><button style="margin-top:5%;width: 45%"class="harga"> 35.000,-<br>Rp.35.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-40000-650759"><button style="margin-top:5%;width: 45%"class="harga"> 40.000,-<br>Rp.40.990,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-45000-651270"><button style="margin-top:5%;width: 45%"class="harga"> 45.000,-<br>Rp.45.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-50-000-650472"><button style="margin-top:5%;width: 45%"class="harga"> 50.000,-<br>Rp.51.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-55000-651274"><button style="margin-top:5%;width: 45%"class="harga"> 55.000,-<br>Rp.55.850,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-100-000-650518"><button style="margin-top:5%;width: 45%"class="harga"> 100.000,-<br>Rp.100.000,-</button></a></div> </div><div id="data"class="container" style="display:none;border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none; float: left"><a href="https://promang1.bukaolshop.site/produk/data-500-mb-656193"><button style="margin-top:10%;width: 45%"class="harga"> 500 MB 7 Hari<br>Rp.13.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-1gb-500mb-youtube-656200"><button style="margin-top:10%;width: 45%"class="harga"> 1,5 GB 30 HARI<br>Rp.25.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-2gb-1-5-gb-youtube-656196"><button style="margin-top:5%;width: 45%"class="harga"> 3,5 GB 30 HARI<br>Rp.28.00,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-4gb-2-gb-youtube-656198"><button style="margin-top:5%;width: 45%"class="harga"> 6 GB 30 HARI<br>Rp.76.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/unlimited-max-25gb-661762"><button style="margin-top:5%;width: 45%;font-size: 8"class="harga"> 24 GB 30 HARI<br>Rp.71.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-combo-10gb-656203"><button style="margin-top:5%;width: 45%;"class="harga"> 10 GB 30 HARI<br>Rp.100.000,-</button></a></button></a><a href="https://promang1.bukaolshop.site/produk/data-30-gb-telkomsel-650486"><button style="margin-top:5%;width: 45%;"class="harga"> 30 GB 7 HARI<br>Rp.84.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-15-gb-40-gb-videomax-650491"><button style="margin-top:5%;width: 45%;"class="harga"> 55 GB 30 HARI<br>Rp.146.000,-</button></a></button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 10 GB 7 HARI<br>Rp.10.000,-</button></a><a href""><button style="margin-top:5%;width: 45%;;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 50 GB 7 HARI<br>Rp.50.000,-</button></a></button></a></div>';
+                }
+                break;
+                case "xl" : {
+                    kota = '<div class="btn-group1" style="width:100%;margin-top:-3%"><button id="on"onclick=" document.getElementById(\'on\').style=\'background-color:white ;color:black;border-bottom:none;border-radius:3px;width:50%\';document.getElementById(\'off\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'block\';document.getElementById(\'data\').style.display=\'none\'"  style="width:50%";border-radius:3px;>PULSA</button><button id="off" onclick=" document.getElementById(\'off\').style=\'background-color:white;color:black;border-bottom:none;border-radius:3px; ;width:50%;border-radius:3px\';document.getElementById(\'on\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'none\';document.getElementById(\'data\').style.display=\'block\'"style="width:50%;border-radius:3px;  ">PAKET DATA</button></div> </div><br><div id="pulsaa"class="container" style="border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none"><a href="https://promang1.bukaolshop.site/produk/pulsa-5-000-650351"><center><button style="margin-top:10%; width: 45%"class="harga"> 5.000,-<br>Rp.5.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-10-000-650469"><button style="margin-top:10%;width: 45%"class="harga"> 10.000,-<br>Rp.11.200,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-15-000-650751"><button style="margin-top:5%;width: 45%"class="harga"> 15.000,-<br>Rp.15.600,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-20-000-650471"><button style="margin-top:5%;width: 45%"class="harga"> 20.000,-<br>Rp.20.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-25000-650752"><button style="margin-top:5%;width: 45%"class="harga"> 25.000,-<br>Rp.25.750,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-30000-650758"><button style="margin-top:5%;width: 45%"class="harga"> 30.000,-<br>Rp.30.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-35000-650761"><button style="margin-top:5%;width: 45%"class="harga"> 35.000,-<br>Rp.35.900,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-40000-650759"><button style="margin-top:5%;width: 45%"class="harga"> 40.000,-<br>Rp.40.990,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-45000-651270"><button style="margin-top:5%;width: 45%"class="harga"> 45.000,-<br>Rp.45.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-50-000-650472"><button style="margin-top:5%;width: 45%"class="harga"> 50.000,-<br>Rp.51.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-55000-651274"><button style="margin-top:5%;width: 45%"class="harga"> 55.000,-<br>Rp.55.850,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-100-000-650518"><button style="margin-top:5%;width: 45%"class="harga"> 100.000,-<br>Rp.100.000,-</button></a></div> </div><div id="data"class="container" style="display:none;border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none; float: left"><a href="https://promang1.bukaolshop.site/produk/data-500-mb-656193"><button style="margin-top:10%;width: 45%"class="harga"> 500 MB 7 Hari<br>Rp.13.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-1gb-500mb-youtube-656200"><button style="margin-top:10%;width: 45%"class="harga"> 1,5 GB 30 HARI<br>Rp.25.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-2gb-1-5-gb-youtube-656196"><button style="margin-top:5%;width: 45%"class="harga"> 3,5 GB 30 HARI<br>Rp.28.00,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-4gb-2-gb-youtube-656198"><button style="margin-top:5%;width: 45%"class="harga"> 6 GB 30 HARI<br>Rp.76.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/unlimited-max-25gb-661762"><button style="margin-top:5%;width: 45%;font-size: 8"class="harga"> 24 GB 30 HARI<br>Rp.71.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-combo-10gb-656203"><button style="margin-top:5%;width: 45%;"class="harga"> 10 GB 30 HARI<br>Rp.100.000,-</button></a></button></a><a href="https://promang1.bukaolshop.site/produk/data-30-gb-telkomsel-650486"><button style="margin-top:5%;width: 45%;"class="harga"> 30 GB 7 HARI<br>Rp.84.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-15-gb-40-gb-videomax-650491"><button style="margin-top:5%;width: 45%;"class="harga"> 55 GB 30 HARI<br>Rp.146.000,-</button></a></button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 10 GB 7 HARI<br>Rp.10.000,-</button></a><a href""><button style="margin-top:5%;width: 45%;;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 50 GB 7 HARI<br>Rp.50.000,-</button></a></button></a></div>';
+                            
+                }
+                break;
+                case "axis" : {
+                    kota = '<div class="btn-group1" style="width:100%;margin-top:-3%"><button id="on"onclick=" document.getElementById(\'on\').style=\'background-color:white ;color:black;border-bottom:none;border-radius:3px;width:50%\';document.getElementById(\'off\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'block\';document.getElementById(\'data\').style.display=\'none\'"  style="width:50%";border-radius:3px;>PULSA</button><button id="off" onclick=" document.getElementById(\'off\').style=\'background-color:white;color:black;border-bottom:none;border-radius:3px; ;width:50%;border-radius:3px\';document.getElementById(\'on\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'none\';document.getElementById(\'data\').style.display=\'block\'"style="width:50%;border-radius:3px;  ">PAKET DATA</button></div> </div><br><div id="pulsaa"class="container" style="border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none"><a href="https://promang1.bukaolshop.site/produk/pulsa-5-000-655795"><center><button style="margin-top:10%; width: 45%"class="harga"> 5.000,-<br>Rp.6.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-10-000-655797"><button style="margin-top:10%;width: 45%"class="harga"> 10.000,-<br>Rp.11.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-15-000-655801"><button style="margin-top:5%;width: 45%"class="harga"> 15.000,-<br>Rp.15.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-25-000-655804"><button style="margin-top:5%;width: 45%"class="harga"> 25.000,-<br>Rp.25.388,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-30-000-655806"><button style="margin-top:5%;width: 45%"class="harga"> 30.000,-<br>Rp.30.200,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-50-000-655809"><button style="margin-top:5%;width: 45%"class="harga"> 50.000,-<br>Rp.50.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-100-000-655816"><button style="margin-top:5%;width: 45%"class="harga"> 100.000,-<br>Rp.100.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/pulsa-100-000-650518"><button style="margin-top:5%;width: 45%"class="harga"> 200.000,-<br>Rp.200.000,-</button></a></div> </div><div id="data"class="container" style="display:none;border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none; float: left"><a href="https://promang1.bukaolshop.site/produk/data-500-mb-656193"><button style="margin-top:10%;width: 45%"class="harga"> 500 MB 7 Hari<br>Rp.13.500,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-1gb-500mb-youtube-656200"><button style="margin-top:10%;width: 45%"class="harga"> 1,5 GB 30 HARI<br>Rp.25.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-2gb-1-5-gb-youtube-656196"><button style="margin-top:5%;width: 45%"class="harga"> 3,5 GB 30 HARI<br>Rp.28.00,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-4gb-2-gb-youtube-656198"><button style="margin-top:5%;width: 45%"class="harga"> 6 GB 30 HARI<br>Rp.76.999,-</button></a><a href="https://promang1.bukaolshop.site/produk/unlimited-max-25gb-661762"><button style="margin-top:5%;width: 45%;font-size: 8"class="harga"> 24 GB 30 HARI<br>Rp.71.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-combo-10gb-656203"><button style="margin-top:5%;width: 45%;"class="harga"> 10 GB 30 HARI<br>Rp.100.000,-</button></a></button></a><a href="https://promang1.bukaolshop.site/produk/data-30-gb-telkomsel-650486"><button style="margin-top:5%;width: 45%;"class="harga"> 30 GB 7 HARI<br>Rp.84.000,-</button></a><a href="https://promang1.bukaolshop.site/produk/data-15-gb-40-gb-videomax-650491"><button style="margin-top:5%;width: 45%;"class="harga"> 55 GB 30 HARI<br>Rp.146.000,-</button></a></button></a><a href""><button style="margin-top:5%;width: 45%;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 10 GB 7 HARI<br>Rp.10.000,-</button></a><a href""><button style="margin-top:5%;width: 45%;;background-color:#732d2d;border: 1px solid #732d2d"class="harga"> 50 GB 7 HARI<br>Rp.50.000,-</button></a></button></a></div>';
+                }
+                break;
+               
+                case "smartfreen" : {
+                    kota = '<div class="btn-group1" style="width:100%;margin-top:-3%"><button id="on"onclick=" document.getElementById(\'on\').style=\'background-color:white ;color:black;border-bottom:none;border-radius:3px;width:50%\';document.getElementById(\'off\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'block\';document.getElementById(\'data\').style.display=\'none\'"  style="width:50%";border-radius:3px;>PULSA</button><button id="off" onclick=" document.getElementById(\'off\').style=\'background-color:white;color:black;border-bottom:none;border-radius:3px; ;width:50%;border-radius:3px\';document.getElementById(\'on\').style=\'background-color:#c62626 ;width:50%\';document.getElementById(\'pulsaa\').style.display=\'none\';document.getElementById(\'data\').style.display=\'block\'"style="width:50%;border-radius:3px;  ">PAKET DATA</button></div> </div><br><div id="pulsaa"class="container" style="border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none"><a href=""><button style="margin-top:10%"class="harga"> 5.000,-<br>Rp.6.500,-</button></a><a href=""><button style="margin-top:10%;"class="harga"> 10.000,-<br>Rp.11.500,-</button></a><a href=""><button style="margin-top:5%"class="harga"> 15.000,-<br>Rp.15.500,-</button></a><a href=""><button style="margin-top:5%;"class="harga"> 20.000,-<br>Rp.20.500,-</button></a><a href=""><button style="margin-top:5%"class="harga"> 25.000,-<br>Rp.25.500,-</button></a><a href""><button style="margin-top:5%;"class="harga"> 50.000,-<br>Rp.50.500,-</button></a><a href=""><button style="margin-top:5%"class="harga"> 100.000,-<br>Rp.100.500,-</button></a><a href""><button style="margin-top:5%;"class="harga"> 200.000,-<br>Rp.200.500,-</button></a></div><div id="data"class="container" style="display: none;border:1px solid #c62626;margin-top:-2%; border-radius:3px; border-top:none"><a href=""><button style="margin-top:10%; width: 90%"class="harga"> 1 GB 30 HARI  |  Rp.11.000,-</button></a><a href=""><button style="margin-top:3%; width: 90%"class="harga"> 1 GB 30 HARI  |  Rp.11.000,-</button></a><a href=""><button style="margin-top:3%; width: 90%"class="harga"> 1 GB 30 HARI  |  Rp.11.000,-</button></a><a href=""><button style="margin-top:3%; width: 90%"class="harga"> 1 GB 30 HARI  |  Rp.11.000,-</button></a><a href=""><button style="margin-top:3%; width: 90%"class="harga"> 1 GB 30 HARI  |  Rp.11.000,-</button></a><a href=""><button style="margin-top:3%; width: 90%"class="harga"> 1 GB 30 HARI  |  Rp.11.000,-</button></a>';
+                }
+                break;
+                case "game" : {
+                    kota = ' <label style="color:#c62626">TERLARIS HARI INI</label><br> <div class="bg"><img style="width:40%;border-radius:5px;margin-right: 2%"  src="https://i.ibb.co/JmL9VR9/download.png"></a><img style="width:40%;border-radius:5px;margin-right: 2%"  src="https://i.ibb.co/sytx3ZV/Logo-Telkomsel-1.png" alt="ff-1" border="0"></a><img style="width:40%;border-radius:5px;margin-right: 2%"  src="https://i.ibb.co/Vvpb7p5/Indosat-Ooredoo-Logo.jpg"  alt="ff-1" border="0"></a></div><br>';
+                }
+                break;
+                case "tre" : {
+                    kota ='ini tri';
+                }
+                break;
+                default :kota ='';
+            }
+            document.getElementById('kota').innerHTML =kota;
+            document.getElementById("on").style="background-color:white;color:black;border-radius:3px;border-bottom:none; width:50%";
+        }
+    </script><br><br>
+                        
+                    </div>
+ 
+                    <div id="text-info"></div>
+                </div>
+            </div>
+
+</body>
+<style>
+
+.kotak{
+width:100%;
+background-color: purple;
+height: 20%;
+border-radius:4px;
+color: white;
+}  .bg {
+    margin-right: 2%;
+  color: white;
+  border-radius: 0px;
+  display: flex;
+  overflow:auto;}
+  .video{
+  }.belakang {
+    margin-right: 2%;
+  color: white;
+  border-radius: 0px;
+  display: flex;
+  overflow:auto;}
+
+.btn-group1 button {
+    background-color: #c62626; /* Green background */
+    margin-top:3%;
+    margin-bottom: 2%;
+    border: 1px solid #c62626; /* Green border */
+    color: white; /* White text */
+    padding: 10px ; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+   
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group1 button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group1 button:hover {
+    background-color: #c62626;
+}.pulsa{
+text-align: Center;
+margin-left: 50%;
+}.gambar{
+width:20%;
+margin-bottom:3%;
+margin-right: 1%;
+margin-left: 3%;
+}.harga
+{
+margin-left:2%;
+border: 1px solid #c62626;
+border-radius:5px;
+text-align: left;
+width: 40%;
+float: left;
+padding:10px;
+background-color:#c62626;
+color:  white;
+margin-right: 3%;
+margin-bottom:3%;
+}
+
+</style>
+
+
+
+
+
+
+
+
